@@ -1,4 +1,7 @@
 /* General */
+html {
+    scroll-behavior: smooth;
+}
 * {
     font-family: 'Arima Madurai', cursive;
     margin: 0;
@@ -57,7 +60,7 @@ header {
     width: 60%;
     position: relative;
     display: flex;
-    box-shadow: 0 8px 8px grey;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 10px;
     padding: 20px 10px 20px 20px;
 }
@@ -155,9 +158,9 @@ header p {
     justify-content: space-evenly;
 }
 #hSkillsBlock, #sSkillsBlock {
-    margin: 20px;
+    margin: 3%;
     width: 100%;
-    height: max-content;
+    max-height: 35%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 3px rgb(221, 221, 221);
@@ -167,16 +170,21 @@ header p {
 #skills h2 {
     color:  #00B7C2 ;
 }
-#skills h3 {
-    color: #F58634;
+#hardSkills, #softSkills {
+    margin-top: 10px;
 }
 #hardSkills {
-    margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-flow: row nowrap;
 }
-.hardSkills, #softSkills {
+#softSkills {
+    columns: 6;
+}
+#skills h3, #portfBlock h3{
+    color: #F58634;
+}
+.hardSkills {
     margin: 10px auto;
     max-width: max-content;
     display: flex;
@@ -196,13 +204,123 @@ header p {
     transition: all 0.5s;
 }
 #sSkillsBlock img {
-    width: 110px;
-    margin: 10px 30px;
+    width: 100px;
 }
-#softSkills {
+.softSkills {
+    columns: 1;
+}
+.softSkills p {
+    font-size: 0.85em;
+}
+/* experience and education */
+#expNedu {
+    display: flex;
+    justify-content: space-evenly;
+    height: 85vh;
+    width: 80%;
+    margin: 20px auto;
+}
+#expBlock, #eduBlock {
+    width: 35%;
+    max-height: 100vh;
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    box-shadow: grey 0 3px 3px;
+}
+#expNedu h2 {
+    padding: 10px;
+    color: #00B7C2;
+}
+.experience, .education {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: white;
+}
+#experience h5, #education h5 {
+    color: white;
+    font-size: 1.1em;
+}
+.experience li, .education li{
+    margin-left: 20px;
+}
+#WebDevInt:hover .description, 
+#SistechExp:hover .description, 
+#Waitress:hover .description, 
+#ServiceResi:hover .description,
+#gastroResi:hover .description, 
+#emrResi:hover .description, 
+#MedInt:hover .description,
+#Translator:hover .description,
+#psteacher:hover .description,
+#DWWM:hover .description,
+#FrontEnd:hover .description,
+#FLE:hover .description,
+#MGen:hover .description,
+#PSlearning:hover .description
+ {
+    display: block;
+}
+#experience .dates {
+    color: #FFCC29;
+}
+#education .dates {
+    color: #3bdb56;
+}
+#experience .description, #education .description {
+    display: none;
+    position: absolute;
+    max-width: 25%;
+    width: max-content;
+    height:max-content;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: grey 0 3px 3px;
+}
+#experience .description {
+background-color: #FFCC29;
+}
+#education .description {
+    background-color: #3bdb56;
+}
+#red {
+    color: red;
+}
+/* portfolio */
+#portfBlock {
+    border-top: 3px solid rgb(221, 221, 221);
+    background-image: url('images/bg.jpg');
+    background-attachment: fixed;
+    height: 90vh;
+    padding: 20px;
+}
+#portfBlock h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #00B7C2;
+    padding: 10px;
+    text-shadow: whitesmoke 0 2px 2px;
+}
+#portfolio {
+    display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
-
+article {
+    margin: 3% 10px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: grey 0px 7px 29px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+#portfolio img {
+    width:100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px auto;
+}
 /******* Media Queries ******/
 @media (max-width: 640px) {
     * {
@@ -248,7 +366,7 @@ header p {
         width: 100%;
     }
     #sSkillsBlock img {
-        width: 60px;
+        width: 50px;
         margin: 5px 10px;
     }
     #social-media img, .hardSkills img {
