@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="OnePageCVstyle.css">
-    
-    <!-- google font -->
+    <title>Saja ALHAYAN CV</title>
+    <link rel="icon" href="assets/images/favicon (2).png" />
+    <!--------------------- SECTION google font --------------------->
+    <!-- en / fr -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
-    
-    <link rel="icon" href="images/favicon (2).png" />
-
-    <title>Saja ALHAYAN CV</title>
+    <!-- ar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
+    <!-------------------- SECTION favicon & CSS -------------------->
+    <link rel="stylesheet" href="assets/CSS/OnePageCV.css">
+    <!----------------------- SECTION Scripts ----------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="assets/JS/script.js" defer></script>
 </head>
+
 <body>
-    <nav>
+    <!------------------- SECTION Navigation bar ------------------->
+    <nav lang="en">
         <a href="#visit-card">Who am I</a>
-            
-    <!-- drop down menu contents -->
-            <div id="dropdownnav">
-                <a href="#">Competences
-                </a>
 
-                <ul id="dropdownnav-content">
-                    <li><a href="#hSkillsBlock">Hard Skills</a></li>
-                    <hr>
-                    <li><a href="#sSkillsBlock">Soft Skills</a></li>
-                </ul>
-            </div>
-    <!-- ends here -->      
+        <!-- drop down menu contents -->
+        <div id="dropdownnav">
+            <a href="#">Skills</a>
 
-        <div id="dropdownnav"> <!-- drop down menu contents -->
+            <ul id="dropdownnav-content">
+                <li><a href="#hSkillsBlock">Hard Skills</a></li>
+                <hr>
+                <li><a href="#sSkillsBlock">Soft Skills</a></li>
+            </ul>
+        </div>
+        <!-- ends here -->
+
+        <div id="dropdownnav">
+            <!-- drop down menu contents -->
             <a href="#">Education and Experience</a>
 
             <ul id="dropdownnav-content">
@@ -47,71 +55,131 @@
         <a href="#portfolio">Portfolio</a>
     </nav>
 
-    <header>
+    <nav lang="fr">
+        <a href="#visit-card">À propos de moi</a>
+
+        <div id="dropdownnav">
+            <a href="">Compétences</a>
+
+            <ul id="dropdownnav-content">
+                <li><a href="#hSkillsBlock">Savoirs faire</a></li>
+                <hr>
+                <li><a href="#sSkillsBlock">Savoirs être</a></li>
+            </ul>
+        </div>
+
+        <div id="dropdownnav">
+            <a href="#">Éducation et Expèriences</a>
+
+            <ul id="dropdownnav-content">
+                <li><a href="#expBlock">Expèriences</a></li>
+                <hr>
+                <li><a href="#eduBlock">Éducation</a></li>
+            </ul>
+        </div>
+        <a href="#portfolio">Portfolio</a>
+    </nav>
+
+    <nav lang="ar">
+        <a href="#visit-card">من أنا</a>
+
+        <div id="dropdownnav">
+            <a href="#">المهارات</a>
+
+            <ul id="dropdownnav-content">
+                <li><a href="#hSkillsBlock">
+                        المهارات العملية
+                    </a></li>
+                <hr>
+                <li><a href="#sSkillsBlock">المهارات الشخصية
+                    </a></li>
+            </ul>
+        </div>
+
+        <div id="dropdownnav">
+            <a href="#">التعليم و الخبرات</a>
+
+            <ul id="dropdownnav-content">
+                <li><a href="#expBlock">الخبرات</a></li>
+                <hr>
+                <li><a href="#eduBlock">التعليم</a></li>
+            </ul>
+        </div>
+
+        <a href="#portfolio">مشاريعي</a>
+    </nav>
+
+    <!------------------------ SECTION Header ------------------------>
+    <header lang="en">
         <!-- Languages -->
         <div id="languagesBlock">
             <h2>Languages</h2>
             <div id="languages">
-                <div class="languages">
-                    <img src="images/languages/arabic.png" alt="Arabic">
+                <div class="languages" id="ar" title="قراءة الصفحة باللغة العربية">
+                    <img src="assets/images/languages/arabic.png" alt="Arabic">
                     <p>Arabic</p>
                     <span>Mother Language</span>
                 </div>
-    
-                <div class="languages">
-                    <img src="images/languages/english.png" alt="English">
+
+                <div class="languages" id="en" title="See this page in English">
+                    <img src="assets/images/languages/english.png" alt="English">
                     <p>English</p>
                     <span>Fluent</span>
                 </div>
-    
-                <div class="languages">
-                    <img src="images/languages/french.png" alt="French">
+
+                <div class="languages" id="fr" title="Voir la page en français">
+                    <img src="assets/images/languages/french.png" alt="French">
                     <p>French</p>
                     <span>TCF C1</span>
-                </div>    
+                </div>
             </div>
         </div>
         <div id="visit-card">
-        <!-- photo / name / title / presentation  -->
+            <!-- photo / name / title / presentation  -->
             <div id="persona">
-                <img src="images/persona.jpg" alt="Me" id="personaImg">                
+                <img src="assets/images/persona.jpg" alt="Me" id="personaImg">
             </div>
-            
+
             <div id="visit-card-contents">
                 <h1>Saja ALHAYAN</h1>
                 <h2>Web developer</h2>
-                <p>Professionally reoriented. I have a passion towards téchnology and am looking for my first adventure !</p>
+                <p>Professionally reoriented. I have a passion towards téchnology and am looking for my first adventure
+                    !</p>
 
                 <h3>Currently</h3>
-                <p>Learning Full Stack Web Development at a training center (Professional degree RNCP level 5, equivalent to BAC+2)</p> 
-                
+                <p>Learning Full Stack Web Development at a training center (Professional degree RNCP level 5,
+                    equivalent to BAC+2)</p>
+
                 <div id="social-media">
                     <a href="https://GitHub.com/watch-me-fly" target="_blank">
-                        <img src="images/personalInfo/github.png" alt="GitHub" id="githubpng" title="Github"></a>
+                        <img src="assets/images/personalInfo/github.png" alt="GitHub" id="githubpng" title="Github"></a>
                     <a href="https://www.linkedin.com/in/saja-alhayan/" target="_blank">
-                        <img src="images/personalInfo/linkedin.png" alt="Linkedin" id="linkedinpng" title="Linkedin"></a>
+                        <img src="assets/images/personalInfo/linkedin.png" alt="Linkedin" id="linkedinpng"
+                            title="Linkedin"></a>
                 </div>
-                  
+
             </div>
-        </div> <!--visit card-->
+        </div>
+        <!--end of visit card-->
+
         <!-- Hobbies -->
         <div id="hobbiesBlock">
             <h2>Hobbies</h2>
             <div id="hobbies">
                 <div class="hobbies">
-                    <img src="images/hobbies/blogging.jpg" alt="Blogging">
+                    <img src="assets/images/hobbies/blogging.jpg" alt="Blogging">
                     <p>Blogging</p>
                 </div>
                 <div class="hobbies">
-                    <img src="images/hobbies/travelling.png" alt="Travelling">
+                    <img src="assets/images/hobbies/travelling.png" alt="Travelling">
                     <p>Travelling</p>
                 </div>
                 <div class="hobbies">
-                    <img src="images/hobbies/journaling.png" alt="Journaling">
+                    <img src="assets/images/hobbies/journaling.png" alt="Journaling">
                     <p>Journaling</p>
                 </div>
                 <div class="hobbies">
-                    <img src="images/hobbies/DIY.jpg" alt="DIY">
+                    <img src="assets/images/hobbies/DIY.jpg" alt="DIY">
                     <p>DIY</p>
                 </div>
             </div>
@@ -119,8 +187,166 @@
 
     </header>
 
-    <!-- Hard Skills -->
-    <div id="skills">
+    <header lang="fr">
+        <!-- Languages -->
+        <div id="languagesBlock">
+            <h2>Langues</h2>
+            <div id="languages">
+                <div class="languages" id="FrAr" title="قراءة الصفحة باللغة العربية">
+                    <img src="assets/images/languages/arabic.png" alt="Arabic">
+                    <p>Arabe</p>
+                    <span>Langue Maternelle</span>
+                </div>
+
+                <div class="languages" id="FrEn" title="See this page in English">
+                    <img src="assets/images/languages/english.png" alt="English">
+                    <p>Anglais</p>
+                    <span>Courant</span>
+                </div>
+
+                <div class="languages" id="frfr" title="Voir la page en français">
+                    <img src="assets/images/languages/french.png" alt="French">
+                    <p>Français</p>
+                    <span>TCF C1</span>
+                </div>
+            </div>
+        </div>
+        <div id="visit-card">
+            <div id="persona">
+                <img src="assets/images/persona.jpg" alt="Me" id="personaImg">
+            </div>
+
+            <div id="visit-card-contents">
+                <h1>Saja ALHAYAN</h1>
+                <h2>Développeuse Web</h2>
+                <p>En reconversion professionnelle.
+                    Je suis passionnée par le développement ,
+                    et je cherche une opportunité pour une première aventure !
+                </p>
+
+                <h3>Actuellement</h3>
+                <p>Stagiaire en formation de développement web et web mobile
+                    (titre professionnelle equivalent BAC+2)
+                </p>
+
+                <div id="social-media">
+                    <a href="https://GitHub.com/watch-me-fly" target="_blank">
+                        <img src="assets/images/personalInfo/github.png" alt="GitHub" id="githubpng" title="Github"></a>
+                    <a href="https://www.linkedin.com/in/saja-alhayan/" target="_blank">
+                        <img src="assets/images/personalInfo/linkedin.png" alt="Linkedin" id="linkedinpng"
+                            title="Linkedin"></a>
+                </div>
+
+            </div>
+        </div>
+        <!--end of visit card-->
+
+        <!-- Hobbies -->
+        <div id="hobbiesBlock">
+            <h2>Loisirs</h2>
+            <div id="hobbies">
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/blogging.jpg" alt="Blogging">
+                    <p>Blogging</p>
+                </div>
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/travelling.png" alt="Voyager">
+                    <p>Voyager</p>
+                </div>
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/journaling.png" alt="Journaling">
+                    <p>Journaling</p>
+                </div>
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/DIY.jpg" alt="Bricolage">
+                    <p>Bricolage</p>
+                </div>
+            </div>
+        </div> <!-- hobbies Block-->
+
+    </header>
+
+    <header lang="ar">
+        <!-- Languages -->
+        <div id="languagesBlock">
+            <h2>اللغات</h2>
+            <div id="languages">
+                <div class="languages" id="ArAr" title="قراءة الصفحة باللغة العربية">
+                    <img src="assets/images/languages/arabic.png" alt="Arabic">
+                    <p>العربية</p>
+                    <span>اللغة الأم</span>
+                </div>
+
+                <div class="languages" id="ArEn" title="See this page in English">
+                    <img src="assets/images/languages/english.png" alt="English">
+                    <p>الانجليزية</p>
+                    <span>بطلاقة</span>
+                </div>
+
+                <div class="languages" id="ArFr" title="Voir la page en français">
+                    <img src="assets/images/languages/french.png" alt="French">
+                    <p>الفرنسية</p>
+                    <span>مستوى C1 في اختبار TCF</span>
+                </div>
+            </div>
+        </div>
+        <div id="visit-card">
+            <div id="persona">
+                <img src="assets/images/persona.jpg" alt="Me" id="personaImg">
+            </div>
+
+            <div id="visit-card-contents">
+                <h1>سجاء الحيان</h1>
+                <h2>مبرمجة مواقع انترنت</h2>
+                <p>
+                    .اخترت تغيير مهنتي مؤخراً. لدي شغف بالتقنية و البرمجة
+                    ابحث عن مغامرتي الأولى !
+                </p>
+
+                <h3>حالياً</h3>
+                <p>
+                    أتعلم البرمجة Full Stack في برنامج تدريب مهني يعادل المستوى BAC+2 الفرنسي
+                </p>
+
+                <div id="social-media">
+                    <a href="https://GitHub.com/watch-me-fly" target="_blank">
+                        <img src="assets/images/personalInfo/github.png" alt="GitHub" id="githubpng" title="Github"></a>
+                    <a href="https://www.linkedin.com/in/saja-alhayan/" target="_blank">
+                        <img src="assets/images/personalInfo/linkedin.png" alt="Linkedin" id="linkedinpng"
+                            title="Linkedin"></a>
+                </div>
+
+            </div>
+        </div>
+        <!--end of visit card-->
+
+        <!-- Hobbies -->
+        <div id="hobbiesBlock">
+            <h2>الهوايات</h2>
+            <div id="hobbies">
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/blogging.jpg" alt="كتابة المدونات">
+                    <p>كتابة المدونات</p>
+                </div>
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/travelling.png" alt="السفر">
+                    <p>السفر</p>
+                </div>
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/journaling.png" alt="كتابة المذكرات و الجدولة">
+                    <p>كتابة المذكرات و الجدولة</p>
+                </div>
+                <div class="hobbies">
+                    <img src="assets/images/hobbies/DIY.jpg" alt="الأعمال اليدوية">
+                    <p>الأعمال اليدوية</p>
+                </div>
+            </div>
+        </div> <!-- hobbies Block-->
+
+    </header>
+
+    <!------------------------ SECTION Skills ------------------------>
+    <div id="skills" lang="en">
         <div id="hSkillsBlock">
             <h2>Hard Skills</h2>
             <div id="hardSkills">
@@ -128,34 +354,37 @@
                     <h3>Programming</h3>
                     <div class="hardSkills">
                         <div>
-                            <img src="images/hardSkills/html.png" alt="html" title="HTML">
+                            <img src="assets/images/hardSkills/html.png" alt="html" title="HTML">
                         </div>
                         <div>
-                            <img src="images/hardSkills/CSS.png" alt="CSS" title="CSS">
+                            <img src="assets/images/hardSkills/CSS.png" alt="CSS" title="CSS">
                         </div>
                         <div>
-                            <img src="images/hardSkills/JS.png" alt="JavaScript" title="JavaScript">
+                            <img src="assets/images/hardSkills/JS.png" alt="JavaScript" title="JavaScript">
                         </div>
-                    </div> 
-                </div><!--end / progLang-->
+                    </div>
+                </div>
+                <!--end / progLang-->
 
                 <div class="hscontainer">
                     <h3>Frameworks</h3>
                     <div class="hardSkills">
                         <div>
-                            <img src="images/hardSkills/Bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                            <img src="assets/images/hardSkills/Bootstrap.png" alt="Bootstrap" title="Bootstrap">
                         </div>
                     </div>
-                </div> <!--end / progFWs-->
+                </div>
+                <!--end / progFWs-->
 
                 <div class="hscontainer">
                     <h3>Tools</h3>
                     <div class="hardSkills">
                         <div>
-                            <img src="images/hardSkills/Git.png" alt="Git" title="Git">
+                            <img src="assets/images/hardSkills/Git.png" alt="Git" title="Git">
                         </div>
-                    </div> 
-                </div><!--end / progTools-->
+                    </div>
+                </div>
+                <!--end / progTools-->
 
                 <div class="hscontainer">
                     <h3>Other</h3>
@@ -164,51 +393,243 @@
                             <img src="images/hardSkills/webflow.png" alt="WebFlow" title="WebFlow">
                         </div> -->
                         <div>
-                            <img src="images/hardSkills/PS.png" alt="Photoshop" title="Photoshop">
+                            <img src="assets/images/hardSkills/PS.png" alt="Photoshop" title="Photoshop">
                         </div>
                         <div>
-                            <img src="images/hardSkills/mOffice.png" alt="Microsoft office" title="Office">
+                            <img src="assets/images/hardSkills/mOffice.png" alt="Microsoft office" title="Office">
                         </div>
                     </div>
-                </div> <!--end / hardOther-->
-            </div> <!--end / hardSkills -->
+                </div>
+                <!--end / hardOther-->
+            </div>
+            <!--end / hardSkills -->
 
-        </div> <!--end / Hard Skills block-->
+        </div>
+        <!--end / Hard Skills block-->
 
         <!-- Soft Skills -->
         <div id="sSkillsBlock">
             <h2>Soft Skills</h2>
             <div id="softSkills">
                 <div class="softSkills">
-                    <img src="images/softSkills/teamwork.png" alt="TeamWorking">
+                    <img src="assets/images/softSkills/teamwork.png" alt="TeamWorking">
                     <p>TeamWorking</p>
                 </div>
                 <div class="softSkills">
-                    <img src="images/softSkills/analyseClientNeeds.png" alt="Analysing client's needs">
+                    <img src="assets/images/softSkills/analyseClientNeeds.png" alt="Analysing client's needs">
                     <p>Analysing client's needs</p>
                 </div>
                 <div class="softSkills">
-                    <img src="images/softSkills/organized.png" alt="Organized">
+                    <img src="assets/images/softSkills/organized.png" alt="Organized">
                     <p>Organized</p>
                 </div>
                 <div class="softSkills">
-                    <img src="images/softSkills/adaptation.png" alt="Adaptable">
+                    <img src="assets/images/softSkills/adaptation.png" alt="Adaptable">
                     <p>Adaptable</p>
                 </div>
                 <div class="softSkills">
-                    <img src="images/softSkills/curiosity.png" alt="Curious">
+                    <img src="assets/images/softSkills/curiosity.png" alt="Curious">
                     <p>Curious</p>
                 </div>
                 <div class="softSkills">
-                    <img src="images/softSkills/motivated.png" alt="Motivated">
+                    <img src="assets/images/softSkills/motivated.png" alt="Motivated">
                     <p>Motivated</p>
                 </div>
             </div>
-        </div> <!--end / Soft Skills block-->
-    </div> <!--skills-->
+        </div>
+        <!--end / Soft Skills block-->
+    </div>
 
-    <!-- experience and education  -->
-    <div id="expNedu">
+    <div id="skills" lang="fr">
+        <div id="hSkillsBlock">
+            <h2>Savoirs faire</h2>
+            <div id="hardSkills">
+                <div class="hscontainer">
+                    <h3>Développement</h3>
+                    <div class="hardSkills">
+                        <div>
+                            <img src="assets/images/hardSkills/html.png" alt="html" title="HTML">
+                        </div>
+                        <div>
+                            <img src="assets/images/hardSkills/CSS.png" alt="CSS" title="CSS">
+                        </div>
+                        <div>
+                            <img src="assets/images/hardSkills/JS.png" alt="JavaScript" title="JavaScript">
+                        </div>
+                    </div>
+                </div>
+                <!--end / progLang-->
+
+                <div class="hscontainer">
+                    <h3>Frameworks</h3>
+                    <div class="hardSkills">
+                        <div>
+                            <img src="assets/images/hardSkills/Bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+                <!--end / progFWs-->
+
+                <div class="hscontainer">
+                    <h3>Outils</h3>
+                    <div class="hardSkills">
+                        <div>
+                            <img src="assets/images/hardSkills/Git.png" alt="Git" title="Git">
+                        </div>
+                    </div>
+                </div>
+                <!--end / progTools-->
+
+                <div class="hscontainer">
+                    <h3>Autres</h3>
+                    <div class="hardSkills">
+                        <!-- <div>
+                            <img src="images/hardSkills/webflow.png" alt="WebFlow" title="WebFlow">
+                        </div> -->
+                        <div>
+                            <img src="assets/images/hardSkills/PS.png" alt="Photoshop" title="Photoshop">
+                        </div>
+                        <div>
+                            <img src="assets/images/hardSkills/mOffice.png" alt="Microsoft office" title="Office">
+                        </div>
+                    </div>
+                </div>
+                <!--end / hardOther-->
+            </div>
+            <!--end / hardSkills -->
+
+        </div>
+        <!--end / Hard Skills block-->
+
+        <!-- Soft Skills -->
+        <div id="sSkillsBlock">
+            <h2>Savoirs être</h2>
+            <div id="softSkills">
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/teamwork.png" alt="Travail en équipe">
+                    <p>Travail en équipe</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/analyseClientNeeds.png" alt="Analyser les besoins de client">
+                    <p>Analyser les besoins de client</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/organized.png" alt="Organisée">
+                    <p>Organisée</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/adaptation.png" alt="Adaptable">
+                    <p>Adaptable</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/curiosity.png" alt="Curieuse">
+                    <p>Curieuse</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/motivated.png" alt="Motivée">
+                    <p>Motivée</p>
+                </div>
+            </div>
+        </div>
+        <!--end / Soft Skills block-->
+    </div>
+
+    <div id="skills" lang="ar">
+        <div id="hSkillsBlock">
+            <h2>المهارات العملية</h2>
+            <div id="hardSkills">
+                <div class="hscontainer">
+                    <h3>البرمجة</h3>
+                    <div class="hardSkills">
+                        <div>
+                            <img src="assets/images/hardSkills/html.png" alt="html" title="HTML">
+                        </div>
+                        <div>
+                            <img src="assets/images/hardSkills/CSS.png" alt="CSS" title="CSS">
+                        </div>
+                        <div>
+                            <img src="assets/images/hardSkills/JS.png" alt="JavaScript" title="JavaScript">
+                        </div>
+                    </div>
+                </div>
+                <!--end / progLang-->
+
+                <div class="hscontainer">
+                    <h3>الهيكلة</h3>
+                    <div class="hardSkills">
+                        <div>
+                            <img src="assets/images/hardSkills/Bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+                <!--end / progFWs-->
+
+                <div class="hscontainer">
+                    <h3>الأدوات</h3>
+                    <div class="hardSkills">
+                        <div>
+                            <img src="assets/images/hardSkills/Git.png" alt="Git" title="Git">
+                        </div>
+                    </div>
+                </div>
+                <!--end / progTools-->
+
+                <div class="hscontainer">
+                    <h3>أخرى</h3>
+                    <div class="hardSkills">
+                        <!-- <div>
+                            <img src="images/hardSkills/webflow.png" alt="WebFlow" title="WebFlow">
+                        </div> -->
+                        <div>
+                            <img src="assets/images/hardSkills/PS.png" alt="Photoshop" title="Photoshop">
+                        </div>
+                        <div>
+                            <img src="assets/images/hardSkills/mOffice.png" alt="Microsoft office" title="Office">
+                        </div>
+                    </div>
+                </div>
+                <!--end / hardOther-->
+            </div>
+            <!--end / hardSkills -->
+
+        </div>
+        <!--end / Hard Skills block-->
+
+        <!-- Soft Skills -->
+        <div id="sSkillsBlock">
+            <h2>المهارات الشخصية</h2>
+            <div id="softSkills">
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/teamwork.png" alt="العمل ضمن فريق">
+                    <p>العمل ضمن فريق</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/analyseClientNeeds.png" alt="معرفة ما يحتاج العميل">
+                    <p>معرفة ما يحتاج العميل</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/organized.png" alt="التنظيم">
+                    <p>التنظيم</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/adaptation.png" alt="القدرة على التأقلم">
+                    <p>القدرة على التأقلم</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/curiosity.png" alt="الفضول">
+                    <p>الفضول</p>
+                </div>
+                <div class="softSkills">
+                    <img src="assets/images/softSkills/motivated.png" alt="الطموح">
+                    <p>الطموح</p>
+                </div>
+            </div>
+        </div>
+        <!--end / Soft Skills block-->
+    </div>
+
+    <!-------------- SECTION experience and education -------------->
+    <div id="expNedu" lang="en">
         <!-- Experience -->
         <div id="expBlock">
             <h2>Experience</h2>
@@ -231,10 +652,10 @@
                     <div class="description">
                         <h5>TechFugees, France</h5>
                         <p>Professional reorintation towards programming. With this program:</p>
-                            <ul>
-                                <li>I followed onling courses</li>
-                                <li>had a mentor, a teacher, and a linguistic tandem</li>
-                            </ul>
+                        <ul>
+                            <li>I followed onlineg courses</li>
+                            <li>had a mentor, a teacher, and a linguistic tandem</li>
+                        </ul>
                     </div>
                 </div> <!-- sistechexp-->
                 <div id="Waitress" class="experience">
@@ -250,7 +671,8 @@
                     <div class="description">
                         <h5>Hospital, France</h5>
                         <p><b>Gastroenterologie Service</b></p>
-                        <p>Participate in diagnosing, treating, and practicing minor intervention under the responsibility of the chief of department.</p>
+                        <p>Participate in diagnosing, treating, and practicing minor intervention under the
+                            responsibility of the chief of department.</p>
                     </div>
                 </div><!-- gastroResi -->
                 <div id="emrResi" class="experience">
@@ -259,7 +681,8 @@
                     <div class="description">
                         <h5>Hospital, France</h5>
                         <p><b>Emergency Medicine for Adults and COVID unit</b></p>
-                        <p>Participate in diagnosing, treating, and practicing minor intervention under the responsibility of the chief of department.</p>
+                        <p>Participate in diagnosing, treating, and practicing minor intervention under the
+                            responsibility of the chief of department.</p>
                     </div>
                 </div><!-- emrResi -->
                 <div id="MedInt" class="experience">
@@ -267,9 +690,11 @@
                     <p class="dates">Jul 2017 - Jun 2018</p>
                     <div class="description">
                         <h5>Multiple hospitals - Riyadh, Saudi Arabia</h5>
-                        <p>Observation, practice of minor procedures under the responsability of the chief of service.</p>
+                        <p>Observation, practice of minor procedures under the responsability of the chief of service.
+                        </p>
                     </div>
-                </div> <!--medint-->
+                </div>
+                <!--medint-->
                 <div id="Translator" class="experience">
                     <h4>Translator Ar / En</h4>
                     <p class="dates">May 2012 - Jan 2016</p>
@@ -277,7 +702,8 @@
                         <h5>Emdad Najd - Riyadh, Saudi Arabia</h5>
                         <p>Translation of technical and industrial documents from one language to the other.</p>
                     </div>
-                </div> <!--translator-->
+                </div>
+                <!--translator-->
                 <div id="psteacher" class="experience">
                     <h4>Photoshop Teacher</h4>
                     <p class="dates">1 semester, 2009 - 2010</p>
@@ -287,9 +713,11 @@
                         </h5>
                         <p>Teaching photoshop to students and teachers for a semester as a volunteer.</p>
                     </div>
-                </div> <!--psteacher-->
+                </div>
+                <!--psteacher-->
             </div>
-        </div> <!--end of expBlock-->
+        </div>
+        <!--end of expBlock-->
 
         <!-- edited education -->
         <div id="eduBlock">
@@ -307,18 +735,34 @@
                     </div>
                 </div>
                 <div id="FrontEnd" class="education">
-                    <h4>Front End web development in autodidacte</h4>
-                    <p class="dates">Sep 2021 - on going</p>
+                    <h4>Front End web development in autodidact</h4>
+                    <p class="dates">Sep 2021 - Mar 2022</p>
                     <div class="description">
                         <h5>Coursera.org + OpenClassrooms</h5>
                         <ul>
-                            <li>Understand the web</li>
-                            <li>create websites using HTML5 and CSS</li>
-                            <li>Command line in terminal</li>
-                            <li>Algorithms</li>
-                            <li>HTML, CSS, Bootstrap, JS, basics of Ajax</li>
-                            <li>Basics of JS</li>
-                            <li>Scrum and agile methods</li>
+                            <li>General:
+                                <ul>
+                                    <li>Understand the web</li>
+                                    <li>Command line in terminal</li>
+                                    <li>Manage Your Code Project With Git & Github</li>
+                                    <li>Algorithms</li>
+                                    <li>Scrum and agile methods</li>
+                                </ul>
+                            </li>
+                            <li>Front End:
+                                <ul>
+                                    <li>create websites using HTML5 and CSS</li>
+                                    <li>HTML, CSS, Bootstrap, JS, basics of Ajax</li>
+                                    <li>Basics of JS</li>
+                                    <li>Animation with JavaScript and jQuery</li>
+                                </ul>
+                            </li>
+                            <li>Back End:
+                                <ul>
+                                    <li>Building Web Applications in PHP</li>
+                                    <li>Introduction to SQL</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -353,54 +797,593 @@
                     </div>
                 </div>
             </div>
-        </div> <!--end of eduBlock-->
+        </div>
+        <!--end of eduBlock-->
     </div>
-    
-    <!-- Portfolio -->
-    <div id="portfBlock">
+
+    <div id="expNedu" lang="fr">
+        <!-- Experience -->
+        <div id="expBlock">
+            <h2>Expérience</h2>
+            <div id="experience">
+                <div id="WebDevInt" class="experience">
+                    <h4>Stagiaire - Développeuse Web</h4>
+                    <p class="dates">Jun 2022 - Sep 2022</p>
+                    <div class="description">
+                        <h5>OVRSEA - France</h5>
+                        <ul>
+                            <li>Travail en équipe</li>
+                            <li>Codage, révision des codes, documentation</li>
+                            <li>Préparer un projet</li>
+                        </ul>
+                    </div>
+                </div> <!-- WebDevInt -->
+                <div id="SistechExp" class="experience">
+                    <h4>Sistech Fellow</h4>
+                    <p class="dates">Sep 2021 - Mar 2022</p>
+                    <div class="description">
+                        <h5>TechFugees, France</h5>
+                        <p>Reconversion professionnelle vers le développement web. Avec ce programme :</p>
+                        <ul>
+                            <li>J'ai suivi des cours en ligne</li>
+                            <li>J'avais une mentor, une professeur, et une tandem linguistique</li>
+                        </ul>
+                    </div>
+                </div> <!-- sistechexp-->
+                <div id="Waitress" class="experience">
+                    <h4>Serveuse</h4>
+                    <p class="dates">Aug 2021 - Dec 2021</p>
+                    <div class="description">
+                        <h5>Hôtel, France</h5>
+                    </div>
+                </div> <!-- waitress -->
+                <div id="gastroResi" class="experience">
+                    <h4>Faisant Fonction d'Interne en Médecine</h4>
+                    <p class="dates">May 2021 - Jul 2021</p>
+                    <div class="description">
+                        <h5>Centre Hospitalier, France</h5>
+                        <p><b>Service de gastro-entérologie</b></p>
+                        <p>Participer au diagnostic, au traitement et à la pratique de l'intervention mineure sous la
+                            responsabilité du chef de service.</p>
+                    </div>
+                </div><!-- gastroResi -->
+                <div id="emrResi" class="experience">
+                    <h4>Faisant Fonction d'Interne en Médecine</h4>
+                    <p class="dates">Nov 2020 - Apr 2021</p>
+                    <div class="description">
+                        <h5>Centre Hospitalier, France</h5>
+                        <p><b>Emergency Medicine for Adults and COVID unit</b></p>
+                        <p>Participer au diagnostic, au traitement et à la pratique de l'intervention mineure sous la
+                            responsabilité du chef de service.</p>
+                    </div>
+                </div><!-- emrResi -->
+                <div id="MedInt" class="experience">
+                    <h4>Stagiaire en Médecine</h4>
+                    <p class="dates">Jul 2017 - Jun 2018</p>
+                    <div class="description">
+                        <h5>Plusieurs hôpitaux - Riyadh, Arabie Saoudite</h5>
+                        <p>Observation, pratique de petits actes sous la responsabilité du chef de service.
+                        </p>
+                    </div>
+                </div>
+                <!--medint-->
+                <div id="Translator" class="experience">
+                    <h4>Traductrice Arabe / Anglais</h4>
+                    <p class="dates">Mai 2012 - Jan 2016</p>
+                    <div class="description">
+                        <h5>Emdad Najd - Riyad, Arabie Saoudite</h5>
+                        <p>Traduction de documents techniques et industriels d'une langue à l'autre.</p>
+                    </div>
+                </div>
+                <!--translator-->
+                <div id="psteacher" class="experience">
+                    <h4>Professeur de Photoshop</h4>
+                    <p class="dates">1 semester, 2009 - 2010</p>
+                    <div class="description">
+                        <h5>
+                            65e école secondaire pour les filles - Riyad, Arabie Saoudite
+                        </h5>
+                        <p>Enseigner le Photoshop aux étudiantes et aux enseignantes pendant un semestre en tant que
+                            bénévole.</p>
+                    </div>
+                </div>
+                <!--psteacher-->
+            </div>
+        </div>
+        <!--end of expBlock-->
+
+        <!-- edited education -->
+        <div id="eduBlock">
+            <h2>Éducation</h2>
+            <div id="education">
+                <div id="DWWM" class="education">
+                    <h4>Titre professionnel en développement web et web mobile</h4>
+                    <p class="dates">Mar 2022 - Nov 2022</p>
+                    <div class="description">
+                        <h5>France</h5>
+                        <ul>
+                            <li>Full Stack</li>
+                            <li>RNCP niveau V (équivalent BAC+2)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="FrontEnd" class="education">
+                    <h4>Développement web Front end en autodidacte</h4>
+                    <p class="dates">Sep 2021 - Mar 2022</p>
+                    <div class="description">
+                        <h5>Coursera.org + OpenClassrooms</h5>
+                        <ul>
+                            <li>Générale:
+                                <ul>
+                                    <li>Understand the web</li>
+                                    <li>Command line in terminal</li>
+                                    <li>Manage Your Code Project With Git & Github</li>
+                                    <li>Algorithms</li>
+                                    <li>Scrum and agile methods</li>
+                                </ul>
+                            </li>
+                            <li>Front End:
+                                <ul>
+                                    <li>create websites using HTML5 and CSS</li>
+                                    <li>HTML, CSS, Bootstrap, JS, basics of Ajax</li>
+                                    <li>Basics of JS</li>
+                                    <li>Animation with JavaScript and jQuery</li>
+                                </ul>
+                            </li>
+                            <li>Back End:
+                                <ul>
+                                    <li>Building Web Applications in PHP</li>
+                                    <li>Introduction to SQL</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="FLE" class="education">
+                    <h4>apprentissage de la langue française</h4>
+                    <p class="dates">2019-2021</p>
+                    <div class="description">
+                        <h5>France</h5>
+                        <p>Niveau C1 au TCF est obtenu</p>
+                    </div>
+                </div>
+                <div id="MGen" class="education">
+                    <h4>Diplôme en Médecine Générale
+                        <p id="red">+ Web Master</p>
+                    </h4>
+                    <p class="dates">2011 - 2018</p>
+                    <div class="description">
+                        <h5>Almaarefa Université - Riyad, Arabie Saoudite</h5>
+                        <ul>
+                            <p><b>Création et géstion de 2 sites web :</b></p>
+                            <li>Pour la société anglaise de l'université (1 semestre) en utilisant wix.com</li>
+                            <li>Pour partager des présentations, des documents, des nouvelles avec ma classe (4 ans) en
+                                utilisant wix.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="PSlearning" class="education">
+                    <h4>Apprentissage du Photoshop</h4>
+                    <p class="dates">2006</p>
+                    <div class="description">
+                        <h5>Higher Technlogoies Academy for Girls - Riyadh, Arabie Saoudite</h5>
+                        <p>1 an scholaire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of eduBlock-->
+    </div>
+
+    <div id="expNedu" lang="ar">
+        <!-- Experience -->
+        <div id="expBlock">
+            <h2>الخبرات</h2>
+            <div id="experience">
+                <div id="WebDevInt" class="experience">
+                    <h4>متدربة - برمجة انترنت</h4>
+                    <p class="dates">يونيو 2022 - سبتمبر 2022</p>
+                    <div class="description">
+                        <h5>OVRSEA - فرنسا</h5>
+                        <ul>
+                            <li>العمل ضمن فريق</li>
+                            <li>البرمجة، التحقق من الكود، التوثيق</li>
+                            <li>تجهيز مشروع</li>
+                        </ul>
+                    </div>
+                </div> <!-- WebDevInt -->
+                <div id="SistechExp" class="experience">
+                    <h4>مشاركة في Sistech</h4>
+                    <p class="dates">سبتمبر 2021-مارس 2022</p>
+                    <div class="description">
+                        <h5>TechFugees, فرنسا</h5>
+                        <p>
+                            تغيير المسار المهني نحو هندسة المواقع، في هذا البرنامج :
+                        </p>
+                        <ul>
+                            <li>تابعت دورات اون لاين</li>
+                            <li>
+                                كان لدي مرشدة، معلمة، و مساعدة لغة</li>
+                        </ul>
+                    </div>
+                </div> <!-- sistechexp-->
+                <div id="Waitress" class="experience">
+                    <h4>نادلة</h4>
+                    <p class="dates">اغسطس 2021 - ديسمبر 2021</p>
+                    <div class="description">
+                        <h5>فندق، فرنسا</h5>
+                    </div>
+                </div> <!-- waitress -->
+                <div id="gastroResi" class="experience">
+                    <h4>طبيب مقيم - بديلة</h4>
+                    <p class="dates">مايو 2021 - يوليو 2021</p>
+                    <div class="description">
+                        <h5>مستشفى، فرنسا</h5>
+                        <p><b>قسم الجهاز الهضمي</b></p>
+                        <p>
+                            المشاركة في التشخيص، العلاج، و ممارسة العمليات البسيطة تحت اشراف رئيس القسم.</p>
+                    </div>
+                </div><!-- gastroResi -->
+                <div id="emrResi" class="experience">
+                    <h4>طبيب مقيم - بديلة</h4>
+                    <p class="dates">نوفمبر 2020 - ابريل 2021</p>
+                    <div class="description">
+                        <h5>مستشفى، فرنسا</h5>
+                        <p><b>قسم الطوارىء ووحدة الكورونا</b></p>
+                        <p>المشاركة في التشخيص، العلاج، و ممارسة العمليات البسيطة تحت اشراف رئيس القسم.</p>
+                    </div>
+                </div><!-- emrResi -->
+                <div id="MedInt" class="experience">
+                    <h4>طبيب متدرب</h4>
+                    <p class="dates">يوليو 2017 - يونيو 2018</p>
+                    <div class="description">
+                        <h5>عدة مستشفيات في الرياض، المملكة العربية السعودية</h5>
+                        <p>ملاحظة، متابعة، و ممارسة العمليات البسيطة تحت اشراف رئيس القسم.
+                        </p>
+                    </div>
+                </div>
+                <!--medint-->
+                <div id="Translator" class="experience">
+                    <h4>مترجمة عربي/انجليزي</h4>
+                    <p class="dates">مايو 2012 - يناير 2016</p>
+                    <div class="description">
+                        <h5>امداد نجد - الرياض، المملكة العربية السعودية</h5>
+                        <p>ترجمة مستندات تقنية و صناعية من لغة الى الاخرى.</p>
+                    </div>
+                </div>
+                <!--translator-->
+                <div id="psteacher" class="experience">
+                    <h4>معلمة فوتوشوب</h4>
+                    <p class="dates">ترم دراسي واحد 2009 - 2010</p>
+                    <div class="description">
+                        <h5>
+                            الثانوية الـ65 للبنات - الرياض، المملكة العربية السعودية
+                        </h5>
+                        <p>تعليم الفوتوشوب للطالبات و المعلمات كمتطوعة</p>
+                    </div>
+                </div>
+                <!--psteacher-->
+            </div>
+        </div>
+        <!--end of expBlock-->
+
+        <!-- edited education -->
+        <div id="eduBlock">
+            <h2>التعليم</h2>
+            <div id="education">
+                <div id="DWWM" class="education">
+                    <h4>شهادة مهنية في هندسة مواقع الانترنت و الجوال</h4>
+                    <p class="dates">مارس 2022-نوفمبر 2022</p>
+                    <div class="description">
+                        <h5>فرنسا</h5>
+                        <ul>
+                            <li>Full Stack</li>
+                            <li>شهادة تعادل BAC+2 في فرنسا</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="FrontEnd" class="education">
+                    <h4>برمجة واجهات المواقع - تعلم ذاتي</h4>
+                    <p class="dates">سبتمبر 2021- مارس 2022</p>
+                    <div class="description">
+                        <h5>Coursera.org + OpenClassrooms</h5>
+                        <ul>
+                            <li>عام :
+                                <ul>
+                                    <li>Understand the web</li>
+                                    <li>Command line in terminal</li>
+                                    <li>Manage Your Code Project With Git & Github</li>
+                                    <li>Algorithms</li>
+                                    <li>Scrum and agile methods</li>
+                                </ul>
+                            </li>
+                            <li>الواجهة :
+                                <ul>
+                                    <li>create websites using HTML5 and CSS</li>
+                                    <li>HTML, CSS, Bootstrap, JS, basics of Ajax</li>
+                                    <li>Basics of JS</li>
+                                    <li>Animation with JavaScript and jQuery</li>
+                                </ul>
+                            </li>
+                            <li>البيانات و الخلفية :
+                                <ul>
+                                    <li>Building Web Applications in PHP</li>
+                                    <li>Introduction to SQL</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="FLE" class="education">
+                    <h4>تعلم اللغة الفرنسية</h4>
+                    <p class="dates">2019-2021</p>
+                    <div class="description">
+                        <h5>فرنسا</h5>
+                        <p>الحصول على مستوى C1 في اختبار TCF</p>
+                    </div>
+                </div>
+                <div id="MGen" class="education">
+                    <h4>بكالوريوس في الطب العام و الجراحة العامة(M.D.)
+                        <p id="red">+ إدارة مواقع انترنت</p>
+                    </h4>
+                    <p class="dates">2011 - 2018</p>
+                    <div class="description">
+                        <h5>جامعة المعرفة - الرياض، المملكة العربية السعودية</h5>
+                        <ul>
+                            <p><b>عمل و ادارة موقعين انترنت :</b></p>
+                            <li>للمجتمع الانجليزي في الجامعة لمدة ترم واحد، باستخدام wix.com</li>
+                            <li>لزملائي، لنشر عروض الباوربوينت، المستندات، الأخبار - 4 سنوات، باستخدام wix.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="PSlearning" class="education">
+                    <h4>تعلم الفوتوشوب</h4>
+                    <p class="dates">2006</p>
+                    <div class="description">
+                        <h5>أكاديمية التقنيات العالية للفتيات - الرياض، السعودية</h5>
+                        <p>سنة دراسية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of eduBlock-->
+    </div>
+
+    <!---------------------- SECTION Portfolio ---------------------->
+    <div id="portfBlock" lang="en">
         <h2>Portfolio</h2>
         <div id="portfolio">
             <article>
                 <h3>Dummy Restaurant Page</h3>
-                <a href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">
-                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Responsive-Restau/screenshot.png" alt="Screenshot">
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Responsive-Restau/screenshot.png"
+                        alt="Screenshot">
                 </a>
                 <div class="description">
                     (
-                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/tree/main/Responsive-Restau">GitHub code</a> /
-                    <a href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">HTML preview</a>
+                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/tree/main/Responsive-Restau">GitHub
+                        code</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">HTML
+                        preview</a>
                     )
                     <p>HTML, CSS, & Bootstrap were used to create this page.</p>
                 </div>
             </article>
             <article>
                 <h3>Parallax Page</h3>
-                <a href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">
-                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Parallax/Screenshot.png" alt="Screenshot">
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Parallax/Screenshot.png"
+                        alt="Screenshot">
                 </a>
                 <div class="description">
                     (
-                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax">GitHub code</a> /
-                    <a href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">HTML preview</a>
+                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax">GitHub
+                        code</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">HTML
+                        preview</a>
                     )
-                    <p>HTML, & CSS were used to create this page.</p>
+                    <p>HTML & CSS were used to create this page.</p>
                 </div>
             </article>
             <article>
                 <h3>Documentation page</h3>
-                <a href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">
-                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/manualLike-sideMenu/Screenshot.png" alt="Screenshot">
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/manualLike-sideMenu/Screenshot.png"
+                        alt="Screenshot">
                 </a>
                 <div class="description">
                     (
                     <a href="https://github.com/Watch-Me-Fly/Portfolio/tree/main/manualLike-sideMenu">GitHub code</a> /
-                    <a href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">HTML preview</a>
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">HTML
+                        preview</a>
                     )
-                <p>HTML, CSS, & JavaScript were used to create this page.</p>
+                    <p>HTML, CSS, & JavaScript were used to create this page.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Tourism page</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/Riyadh/index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Riyadh/Screenshot.png"
+                        alt="Screenshot">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Portfolio/tree/main/Riyadh">GitHub code</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/Riyadh/index.html">HTML
+                        preview</a>
+                    )
+                    <p>HTML, CSS, & JavaScript were used to create this page.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="portfBlock" lang="fr">
+        <h2>Portfolio</h2>
+        <div id="portfolio">
+            <article>
+                <h3>Faux page du Restaurant</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Responsive-Restau/screenshot.png"
+                        alt="Capture d'écran">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/tree/main/Responsive-Restau">Code
+                        sur GitHub
+
+                    </a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">Aperçu
+                        HTML</a>
+                    )
+                    <p>HTML, CSS, & Bootstrap ont étaient utilisés pour créer cette page.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Page Parallax</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Parallax/Screenshot.png"
+                        alt="Capture d'écran">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax">Code
+                        sur GitHub</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">Aperçu
+                        HTML</a>
+                    )
+                    <p>HTML,& CSS ont étaient utilisés pour créer cette page.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Page de Documentation</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/manualLike-sideMenu/Screenshot.png"
+                        alt="Capture d'écran">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Portfolio/tree/main/manualLike-sideMenu">Code
+                        sur GitHub</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">Aperçu
+                        HTML</a>
+                    )
+                    <p>HTML, CSS, & Javascript ont étaient utilisés pour créer cette page.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Page touristique</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/Riyadh/index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Riyadh/Screenshot.png"
+                        alt="Capture d'écran">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Portfolio/tree/main/Riyadh">Code
+                        sur GitHub</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/Riyadh/index.html">Aperçu
+                        HTML</a>
+                    )
+                    <p>HTML, CSS, & JavaScript ont étaient utilisés pour créer cette page.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="portfBlock" lang="ar">
+        <h2>ملف المشاريع</h2>
+        <div id="portfolio">
+            <article>
+                <h3>موقع مزيف لمطعم</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Responsive-Restau/screenshot.png"
+                        alt="لقطة شاشة">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/tree/main/Responsive-Restau">الكود
+                        على GitHub
+
+                    </a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Responsive-Restau/Index.html">عرض
+                        الصفحة HTML</a>
+                    )
+                    <p>تم استخدام HTML، CSS، و Bootstrap لعمل هذه الصفحة.</p>
+                </div>
+            </article>
+            <article>
+                <h3>صفحة Parallax</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Parallax/Screenshot.png"
+                        alt="لقطة شاشة">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax">الكود على
+                        GitHub</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Projects-Practicing-Portfolio/blob/main/Parallax/Index.html">عرض
+                        الصفحة HTML</a>
+                    )
+                    <p>تم استخدام HTML، و CSS لعمل هذه الصفحة.</p>
+                </div>
+            </article>
+            <article>
+                <h3>صفحة توثيق</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/manualLike-sideMenu/Screenshot.png"
+                        alt="لقطة شاشة">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Portfolio/tree/main/manualLike-sideMenu">الكود على
+                        GitHub</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/manualLike-sideMenu/JS-basic-challenges.html">عرض
+                        الصفحة HTML</a>
+                    )
+                    <p>تم استخدام HTML، CSS، و JavaScript لعمل هذه الصفحة.</p>
+                </div>
+            </article>
+            <article>
+                <h3>صفحة سياحية</h3>
+                <a
+                    href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/Riyadh/index.html">
+                    <img src="https://github.com/Watch-Me-Fly/Portfolio/raw/main/Riyadh/Screenshot.png" alt="لقطة شاشة">
+                </a>
+                <div class="description">
+                    (
+                    <a href="https://github.com/Watch-Me-Fly/Portfolio/tree/main/Riyadh">الكود على GitHub</a> /
+                    <a
+                        href="https://htmlpreview.github.io/?https://github.com/Watch-Me-Fly/Portfolio/blob/main/Riyadh/index.html">عرض
+                        الصفحة HTML</a>
+                    )
+                    <p>تم استخدام HTML، CSS، و JavaScript لعمل هذه الصفحة.</p>
                 </div>
             </article>
         </div>
     </div>
 
 </body>
+
 </html>
