@@ -26,11 +26,4 @@
         }
     );
 
-    $('#ar, #FrAr, #ArAr').click(
-        function () {
-            $('*[lang=ar]').show();
-            $('*[lang=en]').hide();
-            $('*[lang=fr]').hide();
-        }
-    );
 })();
